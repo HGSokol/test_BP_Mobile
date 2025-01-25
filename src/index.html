@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Добро пожаловать</h1>
+    </header>
+    <main>
+      <form class="feedback-form">
+        <div class="form-row">
+          <label for="name">Имя</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Введите ваше имя"
+          />
+          <span class="error error-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Введите ваш email"
+          />
+          <span class="error error-email"></span>
+        </div>
+        <div class="form-row">
+          <label for="phone">Телефон</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Введите ваш телефон"
+          />
+          <span class="error error-phone"></span>
+        </div>
+        <div class="form-row">
+          <label for="message">Сообщение</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Введите ваше сообщение"
+          ></textarea>
+          <span class="error error-message"></span>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+      <div class="form-message"></div>
+      <div class="modal">
+        <div class="modal__content">
+          <h2></h2>
+          <button class="modal--close">Закрыть</button>
+        </div>
+      </div>
+      <button class="open--modal">Нажми</button>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
