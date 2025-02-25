@@ -43,7 +43,7 @@ function i18n() {
           case 0:
             _context2.prev = 0;
             _context2.next = 3;
-            return fetch("/public/i18n/".concat(lang, ".json"));
+            return fetch("./public/i18n/".concat(lang, ".json"));
           case 3:
             response = _context2.sent;
             if (response.ok) {
