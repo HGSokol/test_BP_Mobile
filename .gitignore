@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+
+# Webpack build output
+dist/
+build/
+
+# SCSS cache
+.sass-cache/
+
+# IDE files
+.vscode/
+
+# Generated files
+*.map
+*.lock
+*.bak
+
+# Webpack dev server HMR files
+.hot/
