@@ -7,9 +7,9 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
+    filename: "index.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/",
+    publicPath: "/test_BP_Mobile/",
     clean: true,
   },
   mode: "development",
@@ -28,11 +28,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+          },
+        ],
       },
       {
         test: /\.(png|jpg|gif|svg|webp)$/,
-        type: "asset",
+        type: "asset/resource",
         generator: {
           filename: "images/[hash][ext][query]",
         },
@@ -73,7 +78,7 @@ module.exports = {
       patterns: [{ from: "public", to: "public" }],
     }),
     new MiniCssExtractPlugin({
-      filename: "./src/styles/[name].css",
+      filename: "styles/[name].css",
     }),
   ],
   devServer: {

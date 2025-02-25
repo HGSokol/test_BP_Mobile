@@ -25,7 +25,7 @@ export function i18n() {
 
   async function loadLanguage(lang) {
     try {
-      const response = await fetch(`/public/i18n/${lang}.json`);
+      const response = await fetch(`./public/i18n/${lang}.json`);
 
       if (!response.ok)
         throw new Error(`Failed to load language file: ${lang}`);
