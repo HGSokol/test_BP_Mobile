@@ -1,27 +1,30 @@
 {
-  "name": "test-seobility",
+  "name": "text_bp_mobile",
   "version": "0.0.1",
-  "description": "",
+  "description": "text bp_mobile",
   "author": "HGSokol",
+  "homepage": "https://HGSokol.github.io/test_BP_mobile/",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "babel-loader": "^9.2.1",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
+    "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.9.2",
     "sass": "^1.83.4",
     "sass-loader": "^16.0.4",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
-  },
-  "dependencies": {
-    "imask": "^7.6.1"
   }
 }

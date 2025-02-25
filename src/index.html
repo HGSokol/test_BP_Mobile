@@ -3,64 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Форма обратной связи</title>
-    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <title>test makets for webdev</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Добро пожаловать</h1>
-    </header>
-    <main>
-      <form class="feedback-form">
-        <div class="form-row">
-          <label for="name">Имя</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Введите ваше имя"
+    <main class="container">
+      <div class="rectangle"></div>
+      <div class="oval"></div>
+      <div class="content">
+        <svg
+          class="cross"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.0105 11.5997L17.4165 6.19368L17.8144 6.59155L12.4084 11.9975L18 17.5892L17.5892 18L11.9975 12.4084L6.59155 17.8144L6.19368 17.4165L11.5997 12.0105L6 6.41085L6.41085 6L12.0105 11.5997Z"
+            stroke="white"
+            stroke-opacity="0.4"
+            stroke-linejoin="round"
           />
-          <span class="error error-name"></span>
+        </svg>
+        <h1 class="content_title" data-i18n="Get Unlimited <br>Access"></h1>
+        <div class="features">
+          <div class="feature">
+            <p data-i18n="Unlimited Art <br>Creation"></p>
+          </div>
+          <div class="feature">
+            <p data-i18n="Exclusive <br>Styles"></p>
+          </div>
+          <div class="feature">
+            <p data-i18n="Magic Avatars <br>With 20% Off"></p>
+          </div>
         </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Введите ваш email"
-          />
-          <span class="error error-email"></span>
+        <div class="buttons_container">
+          <button class="pricing selected">
+            <div>
+              <p class="title" data-i18n="YEARLY ACCESS"></p>
+              <p
+                class="desc"
+                data-price="yearly_year"
+                data-i18n="Just {{price}} per year"
+              ></p>
+            </div>
+            <p
+              class="price"
+              data-price="yearly_week"
+              data-i18n="{{price}} <br>per week"
+            ></p>
+            <span class="badge" data-i18n="BEST OFFER"></span>
+          </button>
+          <button class="pricing">
+            <p class="title" data-i18n="WEEKLY ACCESS"></p>
+            <p
+              class="price"
+              data-price="weekly_week"
+              data-i18n="{{price}} <br>per week"
+            ></p>
+          </button>
+          <button class="continue" data-i18n="Continue"></button>
         </div>
-        <div class="form-row">
-          <label for="phone">Телефон</label>
-          <input
-            type="text"
-            id="phone"
-            name="phone"
-            placeholder="Введите ваш телефон"
-          />
-          <span class="error error-phone"></span>
-        </div>
-        <div class="form-row">
-          <label for="message">Сообщение</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Введите ваше сообщение"
-          ></textarea>
-          <span class="error error-message"></span>
-        </div>
-        <button type="submit">Отправить</button>
-      </form>
-      <div class="form-message"></div>
-      <div class="modal">
-        <div class="modal__content">
-          <h2></h2>
-          <button class="modal--close">Закрыть</button>
-        </div>
+        <ul class="footer">
+          <li>
+            <a href="#" data-i18n="Terms of Use"></a>
+          </li>
+          <li>
+            <a href="#" data-i18n="Privacy Policy"></a>
+          </li>
+          <li>
+            <a href="#" data-i18n="Restore"></a>
+          </li>
+        </ul>
       </div>
-      <button class="open--modal">Нажми</button>
     </main>
     <script type="module" src="./index.js"></script>
   </body>
