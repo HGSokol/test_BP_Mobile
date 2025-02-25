@@ -126,7 +126,7 @@ body {
   width: 100vw;
   height: 100dvh;
 
-  background: url(/images/b2a756e6ac5c21dc1a27.webp) no-repeat center/cover;
+  background: url(/test_BP_Mobile/images/b2a756e6ac5c21dc1a27.webp) no-repeat center/cover;
   background-position: top;
   overflow: hidden;
 }
@@ -210,7 +210,7 @@ button {
       rgba(6, 9, 37, 0.56) 100%,
       #15072f 100%
     ),
-    url(/images/2be2ab21a7fd63a04fbc.webp) no-repeat center/cover;
+    url(/test_BP_Mobile/images/2be2ab21a7fd63a04fbc.webp) no-repeat center/cover;
 }
 .content .features > :nth-child(2) {
   background: linear-gradient(
@@ -220,7 +220,7 @@ button {
       rgba(6, 9, 37, 0.56) 100%,
       #15072f 100%
     ),
-    url(/images/e5062c260693232fa2dd.webp) no-repeat center/cover;
+    url(/test_BP_Mobile/images/e5062c260693232fa2dd.webp) no-repeat center/cover;
 }
 .content .features > :nth-child(3) {
   background: linear-gradient(
@@ -230,7 +230,7 @@ button {
       rgba(6, 9, 37, 0.56) 100%,
       #15072f 100%
     ),
-    url(/images/1709e2322c234b923683.webp) no-repeat center/cover;
+    url(/test_BP_Mobile/images/1709e2322c234b923683.webp) no-repeat center/cover;
 }
 
 .content .feature {
